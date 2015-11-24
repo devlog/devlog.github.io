@@ -36,6 +36,18 @@ $ cp 2015-11-23-template.md {date}-{post 제목}.md
 $ vi {date}-{post 제목}.md
 ```
 
+## 레이아웃 작성
+---
+layout: post
+title:  "제목은 여기에 작성합니다."
+date:   2015-11-23
+categories: 카테고리는 여기 작성합니다.
+---      
+카테고리는 띄어쓰기로 path를 구분합니다.   
+ex) categories: javascript node 이면 post는 http://devlog.github.io/javascript/node/yyyy/MM/dd/filename.html 으로 생성됩니다.
+
+
+
 ## 로컬에서 확인
 
 위에서 로컬에 jekyll 서버를 띄어 놓았다면 http://localhost:4000 에서 확인 가능 합니다.
