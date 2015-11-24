@@ -36,16 +36,9 @@ $ cp 2015-11-23-template.md {date}-{post 제목}.md
 $ vi {date}-{post 제목}.md
 ```
 
-## 레이아웃 작성
----
-layout: post
-title:  "제목은 여기에 작성합니다."
-date:   2015-11-23
-categories: 카테고리는 여기 작성합니다.
----      
-카테고리는 띄어쓰기로 path를 구분합니다.   
+## 카테고리 작성
+카테고리는 띄어쓰기로 path를 구분합니다. (_post/template.md 참조)        
 ex) categories: javascript node 이면 post는 http://devlog.github.io/javascript/node/yyyy/MM/dd/filename.html 으로 생성됩니다.
-
 
 
 ## 로컬에서 확인
