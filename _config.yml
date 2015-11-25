@@ -6,7 +6,7 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: DeVlog
+title: Devlog
 #email: @gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   스드스 블로그입니다. 개발 회사이면서 개발자 블로그 하나 운영하지 않아서 그냥 저희가 만들어보려 합니다.
