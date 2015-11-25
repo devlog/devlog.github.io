@@ -5,8 +5,9 @@
     // border-top: 5px solid $grey-color-dark;
     // border-bottom: 1px solid $grey-color-light;
     min-height: 56px;
+    border-top: 1px solid $grey-color-light;
 
-    background-color: #EEEEEE;
+    background-color: $head-foot-background-color;
     // Positioning context for the mobile navigation icon
     position: relative;
 }
@@ -21,7 +22,7 @@
 
     &,
     &:visited {
-        color: #1756a9;
+        color: $main_font_color;
     }
 }
 
@@ -101,6 +102,7 @@
 .site-footer {
     border-top: 1px solid $grey-color-light;
     padding: $spacing-unit 0;
+    background-color: $head-foot-background-color;
 }
 
 .footer-heading {
@@ -119,7 +121,13 @@
     color: $grey-color;
     margin-left: -$spacing-unit / 2;
     @extend %clearfix;
-}
+    
+    a {
+      color: $main_font_color;
+    }
+  }
+
+
 
 .footer-col {
     float: left;
@@ -209,7 +217,7 @@
     font-size: 48px;
     letter-spacing: -1px;
     line-height: 1;
-    color: #00AAA0; 
+    color: $title-main-color; 
 
     @include media-query($on-laptop) {
         font-size: 36px;
