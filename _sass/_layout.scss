@@ -1,13 +1,12 @@
-
-
 /**
  * Site header
  */
 .site-header {
-    border-top: 5px solid $grey-color-dark;
-    border-bottom: 1px solid $grey-color-light;
+    // border-top: 5px solid $grey-color-dark;
+    // border-bottom: 1px solid $grey-color-light;
     min-height: 56px;
 
+    background-color: #EEEEEE;
     // Positioning context for the mobile navigation icon
     position: relative;
 }
@@ -22,7 +21,7 @@
 
     &,
     &:visited {
-        color: $grey-color-dark;
+        color: #1756a9;
     }
 }
 
@@ -202,14 +201,15 @@
  * Posts
  */
 .post-header {
-    margin-bottom: $spacing-unit;
     text-align: center;
+    margin-bottom: $spacing-unit;
 }
 
 .post-title {
-    font-size: 42px;
+    font-size: 48px;
     letter-spacing: -1px;
     line-height: 1;
+    color: #00AAA0; 
 
     @include media-query($on-laptop) {
         font-size: 36px;
@@ -218,6 +218,14 @@
 
 .post-content {
     margin-bottom: $spacing-unit;
+
+
+    h2, h3 {
+        margin-top: 40px;
+        margin-bottom: 20px;
+    }
+
+
 
     h2 {
         font-size: 32px;
