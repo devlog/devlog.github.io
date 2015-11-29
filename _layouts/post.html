@@ -11,10 +11,12 @@ layout: default
   <div class="post-content" itemprop="articleBody">
     {{ content }}
   </div>
-
+  {% if page.author %} 
+  <iframe class="banner-frame" src="../../../../author_info/{{page.author}}.html"></iframe>
+  {% endif %}
 </article>
 <!-- 라이브리 시티 설치 코드 -->
-<div id="lv-container" data-id="city" data-uid="MTAyMC8yNDc3NC8xNTQx">
+<div id="lv-container" data-id="city" data-uid="MTAyMC8yNDc1OC8xNTI5">
 	<script type="text/javascript">
    (function(d, s) {
        var j, e = d.getElementsByTagName(s)[0];
