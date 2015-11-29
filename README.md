@@ -39,6 +39,7 @@ $ vi {date}-{post 제목}.md
 ## 카테고리 작성
 카테고리는 띄어쓰기로 path를 구분합니다. (_post/template.md 참조)        
 ex) categories: javascript node 이면 post는 http://devlog.github.io/javascript/node/yyyy/MM/dd/filename.html 으로 생성됩니다.
+하지만 배너 적용을 위해서 카테고리는 1depth로만 작성해주세요.
 
 
 ## 로컬에서 확인
