@@ -285,16 +285,17 @@ div.author {
       }
     }
 
-    span.vertical-helper {
-      display: inline-block;
-      height: 30%;
-    }
+    // span.vertical-helper {
+    //   display: inline-block;
+    //   height: 30%;
+    // }
 
 
     img {
       height: $content-height;
       margin-left: auto;
       border-radius: 90%;
+      margin: 20px;
       @include media-query($on-laptop) {
         height: $on-laptop-height;
       }

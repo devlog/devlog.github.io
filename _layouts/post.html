@@ -11,8 +11,12 @@ layout: default
   <div class="post-content" itemprop="articleBody">
     {{ content }}
   </div>
+
+  
+
   {% if page.author %} 
-  <iframe class="banner-frame" src="../../../../author_info/{{page.author}}.html"></iframe>
+  {% include {{page.author}}.html %} 
+  <!-- <iframe class="banner&#45;frame" src="../../../../author_info/{{page.author}}.html"></iframe> -->
   {% endif %}
 </article>
 <!-- 라이브리 시티 설치 코드 -->
