@@ -264,9 +264,9 @@ iframe.banner-frame {
     width: 100%; 
     margin-right: auto;
     margin-left: auto;
-    height: $content-height * 3;
+    height: $content-height * 1.5;
     border: 0px;
-    margin-top: 40px;
+    // margin-top: 40px;
  }
 
 div.author {
@@ -321,11 +321,6 @@ div.author {
       }
 
     }
-
-    .author-desc {
-    
-    }
-
 }
 
 
