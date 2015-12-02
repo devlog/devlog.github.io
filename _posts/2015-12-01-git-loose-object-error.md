@@ -10,6 +10,7 @@ categories: git
 
 ### 부팅이 되고 일상처럼 리파지토리 상태를 확인하기위해서 명령을 날립니다. 그런데..
 ( *어제 커밋메시지 작성하고 저장을 안하고 집에갔던 불길한 기분이...* )
+
 ```shell
 $ git status
 error: object file .git/objects/2e/f529faaaed03b2384b9f4d49a2ea95d7833894 is empty
@@ -17,6 +18,7 @@ error: object file .git/objects/2e/f529faaaed03b2384b9f4d49a2ea95d7833894 is emp
 fatal: loose object 7b36029a951eacd979d24e993e020c4d018ca265 (stored in .git/objects/2e/f529faaaed03b2384b9f4d49a2ea95d7833894) is corrupt
 
 ```
+
 여느때 처럼 변경된 파일들이 나와야 하는데, 에러가 발생했습니다. 무언가가 비어있고, 깨졌다고.
 구글링을 통해 나오는 건 소스 백업하고, 다시 클론 받아라라는 소리가 대부분... 아직 머지는 물론 푸시도 안해놓은건데 그럴 수는 없었습니다.
 
