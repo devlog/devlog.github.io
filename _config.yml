@@ -16,7 +16,7 @@ url: "http://yourdomain.com" # the base hostname & protocol for your site
 github_username:  devlog
 
 # Build settings
-markdown: kramdown
+markdown: redcarpet
 
 # 템플릿은 페이지 생성 하지 않도록
 exclude: [_posts/2015-11-23-template.md]
