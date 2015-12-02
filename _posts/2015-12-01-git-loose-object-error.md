@@ -11,7 +11,7 @@ categories: git
 ### 부팅이 되고 일상처럼 리파지토리 상태를 확인하기위해서 명령을 날립니다. 그런데..
 ( *어제 커밋메시지 작성하고 저장을 안하고 집에갔던 불길한 기분이...* )
 
-```console
+```bash
 $ git status
 error: object file .git/objects/2e/f529faaaed03b2384b9f4d49a2ea95d7833894 is empty
 error: object file .git/objects/2e/f529faaaed03b2384b9f4d49a2ea95d7833894 is empty
@@ -32,14 +32,14 @@ rm: remove write-protected regular empty file '.git/objects/55/62499ea432f451cfb
 
 그랬더니
 
-```
+```bash
 ~/gitlab (feature/dowload_feedback*)$ git status
 fatal: bad object HEAD
 ```
 
 파일시스템 체크를 해보니
 
-```
+```bash
 $ ~/gitlab (feature/dowload_feedback*)$ git fsck
 Checking object directories: 100% (256/256), done.
 Checking objects: 100% (102179/102179), done.
@@ -59,21 +59,21 @@ dangling commit b8fc2b8f63a57173dc498d170cf5be6cc1f6df9b
 그렇죠... 제가 마지막 커밋을 지웠으니 포인터가 잘못된거죠.
 그리고 여전히 bad object HEAD
 
-```
+```bash
 $ ~/gitlab (feature/dowload_feedback*)$ git status
 fatal: bad object HEAD
 ```
 
 로그도 마찬가지로 bad object HEAD
 
-```
+```bash
 $ ~/gitlab (feature/dowload_feedback*)$ git log
 fatal: bad object HEAD
 ```
 
 `bad object HEAD`로 다시 구글링 해보니 파일 하나를 add 하면 될거다라고 해서 파일 추가.
 
-```
+```bash
 $ ~/gitlab (feature/dowload_feedback*)$ touch test
 $ ~/gitlab (feature/dowload_feedback*)$ git add test
 $ ~/gitlab (feature/dowload_feedback*)$ git status
@@ -88,7 +88,7 @@ fatal: could not parse HEAD
 
 그러면 리셋해볼까?
 
-```
+```bash
 $ ~/gitlab (feature/dowload_feedback*)$ git reset
 fatal: Could not parse object 'HEAD'.
 ```
@@ -96,7 +96,7 @@ fatal: Could not parse object 'HEAD'.
 HEAD를 해석할 수 없다.
 그러면 다른 브랜치로 옮겨볼까?
 
-```
+```bash
 $ ~/gitlab (feature/dowload_feedback*)$ git checkout next
 error: Your local changes to the following files would be overwritten by checkout:
         app/controllers/admin/etc/lego_project_feedbacks_controller.rb
@@ -111,7 +111,7 @@ Aborting
 파일이 변경된게 있어서 안된다. 어?
 그러면 파일 변경사항은 안다는건데.. 그러면 이력을 하나만 돌려볼까?
 
-```
+```bash
 $ ~/gitlab (feature/dowload_feedback*)$ git reset HEAD@{1}
 Unstaged changes after reset:
 M       Gemfile
