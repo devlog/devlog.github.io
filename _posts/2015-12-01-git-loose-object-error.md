@@ -27,7 +27,7 @@ fatal: loose object 7b36029a951eacd979d24e993e020c4d018ca265 (stored in .git/obj
 ```
 $ ~/gitlab (feature/dowload_feedback*)
 $ rm .git/objects/55/62499ea432f451cfb9a3e493d2035839a0ffd4
-rm: remove write-protected regular empty file `.git/objects/55/62499ea432f451cfb9a3e493d2035839a0ffd4'? y
+rm: remove write-protected regular empty file '.git/objects/55/62499ea432f451cfb9a3e493d2035839a0ffd4'? y
 ```
 
 그랬더니
