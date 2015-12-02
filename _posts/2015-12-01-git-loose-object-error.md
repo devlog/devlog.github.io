@@ -23,19 +23,22 @@ fatal: loose object 7b36029a951eacd979d24e993e020c4d018ca265 (stored in .git/obj
 
 그래서 일단 백업해두고, 이제까지 한 이력을 날리게 될테니 한번 지워볼까? 하고
 깨졌다는 파일 지웠습니다.
-```
-$ ~/gitlab (feature/dowload_feedback*)$ rm .git/objects/55/62499ea432f451cfb9a3e493d2035839a0ffd4
-rm: remove write-protected regular empty file `.git/objects/55/62499ea432f451cfb9a3e493d2035839a0ffd4'? y
 
+```
+$ ~/gitlab (feature/dowload_feedback*)
+$ rm .git/objects/55/62499ea432f451cfb9a3e493d2035839a0ffd4
+rm: remove write-protected regular empty file `.git/objects/55/62499ea432f451cfb9a3e493d2035839a0ffd4'? y
 ```
 
 그랬더니
+
 ```
-$ ~/gitlab (feature/dowload_feedback*)$ git status
+~/gitlab (feature/dowload_feedback*)$ git status
 fatal: bad object HEAD
 ```
 
 파일시스템 체크를 해보니
+
 ```
 $ ~/gitlab (feature/dowload_feedback*)$ git fsck
 Checking object directories: 100% (256/256), done.
@@ -52,19 +55,24 @@ dangling commit 91712a97ad8b22d2ca2370ab6bc9e514de50a6d4
 dangling commit 446e3704199c91ae71cdbd5e36a467a94a8e70ed
 dangling commit b8fc2b8f63a57173dc498d170cf5be6cc1f6df9b
 ```
+
 그렇죠... 제가 마지막 커밋을 지웠으니 포인터가 잘못된거죠.
 그리고 여전히 bad object HEAD
+
 ```
 $ ~/gitlab (feature/dowload_feedback*)$ git status
 fatal: bad object HEAD
 ```
+
 로그도 마찬가지로 bad object HEAD
+
 ```
 $ ~/gitlab (feature/dowload_feedback*)$ git log
 fatal: bad object HEAD
 ```
 
 `bad object HEAD`로 다시 구글링 해보니 파일 하나를 add 하면 될거다라고 해서 파일 추가.
+
 ```
 $ ~/gitlab (feature/dowload_feedback*)$ touch test
 $ ~/gitlab (feature/dowload_feedback*)$ git add test
@@ -75,15 +83,19 @@ fatal: bad object HEAD
 $ ~/gitlab (feature/dowload_feedback*)$ git commit
 fatal: could not parse HEAD
 ```
+
 하지만, 여전히 `bad object HEAD`
 
 그러면 리셋해볼까?
+
 ```
 $ ~/gitlab (feature/dowload_feedback*)$ git reset
 fatal: Could not parse object 'HEAD'.
 ```
+
 HEAD를 해석할 수 없다.
 그러면 다른 브랜치로 옮겨볼까?
+
 ```
 $ ~/gitlab (feature/dowload_feedback*)$ git checkout next
 error: Your local changes to the following files would be overwritten by checkout:
@@ -94,8 +106,8 @@ error: Your local changes to the following files would be overwritten by checkou
         config/routes.rb
 Please, commit your changes or stash them before you can switch branches.
 Aborting
-
 ```
+
 파일이 변경된게 있어서 안된다. 어?
 그러면 파일 변경사항은 안다는건데.. 그러면 이력을 하나만 돌려볼까?
 
@@ -116,10 +128,9 @@ error: Trying to write ref ORIG_HEAD with nonexistent object f529faaaed03b2384b9
 error: Cannot update the ref 'ORIG_HEAD'.
 $ ~/gitlab (feature/dowload_feedback*)$ git log
 commit adb82e62873ac0baba315413e9f028b043a7166d
-
 ```
-됬네요. 성공했습니다!!
 
+됬네요. 성공했습니다!!
 
 ## git `loose object` 문제 발생시 결론.
 ### 방법1
