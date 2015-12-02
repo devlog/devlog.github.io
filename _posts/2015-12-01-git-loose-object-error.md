@@ -24,7 +24,7 @@ fatal: loose object 7b36029a951eacd979d24e993e020c4d018ca265 (stored in .git/obj
 그래서 일단 백업해두고, 이제까지 한 이력을 날리게 될테니 한번 지워볼까? 하고
 깨졌다는 파일 지웠습니다.
 
-```
+```bash
 $ ~/gitlab (feature/dowload_feedback*)
 $ rm .git/objects/55/62499ea432f451cfb9a3e493d2035839a0ffd4
 rm: remove write-protected regular empty file '.git/objects/55/62499ea432f451cfb9a3e493d2035839a0ffd4'? y
