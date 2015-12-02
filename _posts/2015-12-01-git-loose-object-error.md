@@ -11,7 +11,7 @@ categories: git
 ### 부팅이 되고 일상처럼 리파지토리 상태를 확인하기위해서 명령을 날립니다. 그런데..
 ( *어제 커밋메시지 작성하고 저장을 안하고 집에갔던 불길한 기분이...* )
 
-```bash
+```console
 $ git status
 error: object file .git/objects/2e/f529faaaed03b2384b9f4d49a2ea95d7833894 is empty
 error: object file .git/objects/2e/f529faaaed03b2384b9f4d49a2ea95d7833894 is empty
