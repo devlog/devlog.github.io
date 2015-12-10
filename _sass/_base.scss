@@ -44,7 +44,9 @@ ul, ol, dl, figure,
  * Images
  */
 img {
-    // max-width: 100%;
+    margin-top: $spacing-unit;
+    margin-bottom: $spacing-unit;
+    max-width: 100%;
     vertical-align: middle;
 }
 
@@ -117,7 +119,9 @@ blockquote {
     padding-left: $spacing-unit / 2;
     font-size: 18px;
     letter-spacing: -1px;
-    font-style: italic;
+    //font-style: italic;
+    margin-top: $spacing-unit;
+    margin-bottom: $spacing-unit;
 
     > :last-child {
         margin-bottom: 0;
@@ -144,7 +148,9 @@ code {
 pre {
     padding: 8px 12px;
     overflow-x: auto;
-
+    margin-top: $spacing-unit;
+    margin-bottom: $spacing-unit;
+ 
     > code {
         border: 0;
         padding-right: 0;

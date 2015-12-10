@@ -296,6 +296,7 @@ div.author {
       margin-left: auto;
       border-radius: 90%;
       margin: 20px;
+      max-width: none;
       @include media-query($on-laptop) {
         height: $on-laptop-height;
       }
