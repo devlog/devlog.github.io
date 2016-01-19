@@ -13,72 +13,72 @@ categories: tip
 
 ### Python 2.x
 
-```shell
+```bash
 $ python -m SimpleHTTPServer 8000
 ```
 
 ### Python 3.x
 
-```shell
+```bash
 $ python -m http.server 8000
 ```
 
 ### Twisted <sub><sup>(Python)</sup></sub>
 
-```shell
+```bash
 $ twistd -n web -p 8000 --path .
 ```
 
 또는:
 
-```shell
+```bash
 $ python -c 'from twisted.web.server import Site; from twisted.web.static import File; from twisted.internet import reactor; reactor.listenTCP(8000, Site(File("."))); reactor.run()'
 ```
 
 ### Ruby ( 1.9.2+ : 이전 버전에서는 더 복잡하게.. ) 
 
-```shell
+```bash
 $ ruby -run -e httpd . -p8000
 ```
 
 ### adsf <sub><sup>(Ruby)</sup></sub>
 
-```shell
+```bash
 $ gem install adsf   # install dependency
 $ adsf -p 8000
 ```
 
 ### Sinatra <sub><sup>(Ruby)</sup></sub>
 
-```shell
+```bash
 $ gem install sinatra   # install dependency
 $ ruby -rsinatra -e'set :public_folder, "."; set :port, 8000'
 ```
 
 ### Perl
 
-```shell
+```bash
 $ cpan HTTP::Server::Brick   # install dependency
 $ perl -MHTTP::Server::Brick -e '$s=HTTP::Server::Brick->new(port=>8000); $s->mount("/"=>{path=>"."}); $s->start'
 ```
 
 ### Plack <sub><sup>(Perl)</sup></sub>
 
-```shell
+```bash
 $ cpan Plack   # install dependency
 $ plackup -MPlack::App::Directory -e 'Plack::App::Directory->new(root=>".");' -p 8000
 ```
 
 ### Mojolicious <sub><sup>(Perl)</sup></sub>
 
-```shell
+```bash
 $ cpan Mojolicious::Lite   # install dependency
 $ perl -MMojolicious::Lite -MCwd -e 'app->static->paths->[0]=getcwd; app->start' daemon -l http://*:8000
 ```
 
 ### http-server <sub><sup>(Node.js)</sup></sub>
 
-```shell
+```bash
 $ npm install -g http-server   # install dependency
 $ http-server -p 8000
 ```
@@ -87,40 +87,40 @@ $ http-server -p 8000
 
 ### node-static <sub><sup>(Node.js)</sup></sub>
 
-```shell
+```bash
 $ npm install -g node-static   # install dependency
 $ static -p 8000
 ```
 
 ### PHP <sub><sup>(>= 5.4)</sup></sub>
 
-```shell
+```bash
 $ php -S 127.0.0.1:8000
 ```
 
 ### Erlang
 
-```shell
+```bash
 $ erl -s inets -eval 'inets:start(httpd,[{server_name,"NAME"},{document_root, "."},{server_root, "."},{port, 8000},{mime_types,[{"html","text/html"},{"htm","text/html"},{"js","text/javascript"},{"css","text/css"},{"gif","image/gif"},{"jpg","image/jpeg"},{"jpeg","image/jpeg"},{"png","image/png"}]}]).'
 ```
 
 ### busybox httpd
 
-```shell
+```bash
 $ busybox httpd -f -p 8000
 ```
 
 
 ### webfs
 
-```shell
+```bash
 $ webfsd -F -p 8000
 ```
 
 
 ### IIS Express
 
-```shell
+```bash
 C:\> "C:\Program Files (x86)\IIS Express\iisexpress.exe" /path:C:\MyWeb /port:8000
 ```
 
