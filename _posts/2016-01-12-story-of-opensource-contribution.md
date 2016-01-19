@@ -64,7 +64,7 @@ categories: story
 ### 3-2 기능 비교
 
 | feature | github | 쩌리 |
-|---------|--------|-----|
+|---------|--------|------|
 | search logic | fuzzy search | regular expression |
 | ajax | O | X |
 | branch choice | X | O |
