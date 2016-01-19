@@ -10,17 +10,17 @@ categories: story
 
 ### [0-1 하나의 질문 하나의 대답 그리고 한명의 용자](https://github.com/gitlabhq/gitlabhq/find/master)
 
-  ![여정시작](https://github.com/devlog/devlog.github.io/blob/master/_images/story_start.png)
+  ![여정시작](https://raw.githubusercontent.com/devlog/devlog.github.io/master/_images/story_start.png)
 
 ### 0-2 File Finder 제가 한번 먹어보겠습니다.
 
-  ![제가먹겠습니다.](https://github.com/devlog/devlog.github.io/blob/master/_images/jegamug.png)
+  ![제가먹겠습니다.](https://raw.githubusercontent.com/devlog/devlog.github.io/master/_images/jegamug.png)
 
 ## 1. 쩌리 개발자
 
 ### Github? Ruby? Rails?
 
-  ![여정시작](https://github.com/devlog/devlog.github.io/blob/master/_images/mungmy4.png)
+  ![여정시작](https://raw.githubusercontent.com/devlog/devlog.github.io/master/_images/mungmy4.png)
 
 ## 2. 쩌리 개발자의 스펙과 전략
 
@@ -75,11 +75,11 @@ categories: story
 
 ### 4-1 [참 잘햇어요.](https://github.com/gitlabhq/gitlabhq/pull/9855#issuecomment-159935277)
 
-![참잘햇어요](https://github.com/devlog/devlog.github.io/blob/master/_images/chamjalhessuyo.jpg)
+![참잘햇어요](https://raw.githubusercontent.com/devlog/devlog.github.io/master/_images/chamjalhessuyo.jpg)
 
 ### [4-2 잘햇어 근데 너 좀 맞자 (**First Code Review**)](https://github.com/gitlabhq/gitlabhq/pull/9855#discussion-diff-45987287)
 
-![너좀맞자](https://github.com/devlog/devlog.github.io/blob/master/_images/nujommaja.jpg)
+![너좀맞자](https://raw.githubusercontent.com/devlog/devlog.github.io/master/_images/nujommaja.jpg)
   > - **주석 작성 스타일이 안맞아**
   > - **우린 Grit lib를 이제 쓰지 않아**
   > - **css 작성 스타일이 안맞아**
@@ -102,7 +102,7 @@ categories: story
   > - **regular expression 말고 더 강력한 fuzzy 알고리즘을 사용하는게 어때?**
   > - padding이 잘못들어간거 같아
 
-![너좀맞자](https://github.com/devlog/devlog.github.io/blob/master/_images/guji.jpg)
+![너좀맞자](https://raw.githubusercontent.com/devlog/devlog.github.io/master/_images/guji.jpg)
 
 ### 4-3 만약 회사에서 위 기능을 개발 했다면?
 
@@ -110,7 +110,7 @@ categories: story
 
 ### 4.4 [도움의 손길](https://github.com/gitlabhq/gitlabhq/pull/9855#issuecomment-161548943)
 
-![첫판부터장난질이냐](https://github.com/devlog/devlog.github.io/blob/master/_images/helping-hand.jpg)
+![첫판부터장난질이냐](https://raw.githubusercontent.com/devlog/devlog.github.io/master/_images/helping-hand.jpg)
 
 > 이거 짱짱 흥미롭다.
 >
@@ -130,13 +130,13 @@ categories: story
 
 ### 4.5 Review를 받고 도움을 받으니...
 
-![일이커지네](https://github.com/devlog/devlog.github.io/blob/master/_images/growup1.png)
+![일이커지네](https://raw.githubusercontent.com/devlog/devlog.github.io/master/_images/growup1.png)
 
 ## 5. [ID(koreamic)가 부끄러워지는 순간(**Sencond Code Review**)](https://github.com/gitlabhq/gitlabhq/pull/9889)
 
 ### 5.1 이정도 되면 영혼이 탈출을 시도한다.
 
-![멘붕](https://github.com/devlog/devlog.github.io/blob/master/_images/menbung1.jpg)
+![멘붕](https://raw.githubusercontent.com/devlog/devlog.github.io/master/_images/menbung1.jpg)
 
 > - **이거 오타아냐?**
 > - **Indentation 맞춰줘**
@@ -145,7 +145,7 @@ categories: story
 
 ### 5.2 왜냐고 물어보신다면...
 
-![멘붕](https://github.com/devlog/devlog.github.io/blob/master/_images/ch_hyang_respect.jpg)
+![멘붕](https://raw.githubusercontent.com/devlog/devlog.github.io/master/_images/ch_hyang_respect.jpg)
 
 > - 콘트롤어에 체크로직을 추가해야 할꺼 같아
 > - javascript test case가 필요할 꺼 같애(spinach)
@@ -171,7 +171,7 @@ categories: story
 > #### 개발자가 개발을 했으면 코드리뷰를 받는게 오픈소스의 이치라더라라
 > #### 내가 오늘 그 코드 리뷰를 해줄테니 달게 받아라.
 
-![벌을받는게이치라더라](https://github.com/devlog/devlog.github.io/blob/master/_images/bulbadara.png)
+![벌을받는게이치라더라](https://raw.githubusercontent.com/devlog/devlog.github.io/master/_images/bulbadara.png)
 
 >> - check logic바꿔야 할꺼 같애
 >> - 변수를 축약해서 쓰지 않는게 좋을꺼 같애애
@@ -190,11 +190,11 @@ categories: story
 >>>
 >>> **우린 다음 릴리즈까지 기다릴 수 없어. 난 우리가 이걸 받을 준비가 다 됐다고 생각해**
 >
->![리뷰후](https://github.com/devlog/devlog.github.io/blob/master/_images/hebaragi_bul.png)
+>![리뷰후](https://raw.githubusercontent.com/devlog/devlog.github.io/master/_images/hebaragi_bul.png)
 
 ## 7. [드디어.....](https://github.com/gitlabhq/gitlabhq/pull/9889#issuecomment-169640056)
 
-![리뷰후](https://github.com/devlog/devlog.github.io/blob/master/_images/merged.jpeg)
+![리뷰후](https://raw.githubusercontent.com/devlog/devlog.github.io/master/_images/merged.jpeg)
 > 아 대박 !
 
 > 아 존나 대다나다!
@@ -207,7 +207,7 @@ categories: story
 
 ## 8. 아직도 *쩌리* 그래도 **개발자** 앞으로는 ***쩌는 개발자***
 
-![부끄러운줄아시오](https://github.com/devlog/devlog.github.io/blob/master/_images/buggruunjul.gif)
+![부끄러운줄아시오](https://raw.githubusercontent.com/devlog/devlog.github.io/master/_images/buggruunjul.gif)
 
 > **그깟 프록시의 명분이 뭐요?**
 >
@@ -219,7 +219,7 @@ categories: story
 >
 > **그대들이 죽고 못사는 사대의 보안보다 내 소스코드리뷰가 열갑절 백갑절은 더 소중하오.**
 
-![그꿈내가이뤄드리리다](https://github.com/devlog/devlog.github.io/blob/master/_images/gggumnega.jpg)
+![그꿈내가이뤄드리리다](https://raw.githubusercontent.com/devlog/devlog.github.io/master/_images/gggumnega.jpg)
 
 > **협업를 하늘처럼 섬기는 개발자!**
 >
