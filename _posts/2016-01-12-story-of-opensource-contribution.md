@@ -2,7 +2,7 @@
 layout: post
 title:  "쩌리 개발자 OpenSource(Gitlab CI) 컨트리뷰터 되기"
 author: "koreamic"
-date:   2015-11-23
+date:   2016-01-19
 categories: story
 ---
 
