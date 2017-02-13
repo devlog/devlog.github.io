@@ -13,9 +13,10 @@ THE NATURE OF SOFTWARE DEVELOPMENT by Ron Jeffires
  우선 저에게 '이 책 사볼까요?'라고 묻는다면 네 사보세요. 가 제 답입니다. 
 
 ## 첫인상
+ ![title_book](https://github.com/devlog/devlog.github.io/blob/master/_images/softwaredevelopment.jpg?raw=true)
  
  일단 책 표지는 이렇게 생겼습니다.
- ![title_book](https://github.com/devlog/devlog.github.io/blob/master/_images/softwaredevelopment.jpg?raw=true)
+ 
  책 표지만 봐선 뭐 그리 특징이 있어 보이진 않습니다. 
  책을 받았을 때 첫 느낌은 음.. 짧다.. 였습니다. 다 읽고 나서 전체 페이지를 확인해보니 187p 정도의 분량이더군요. 이 책의 특성상 그림이 많고 글이 한 페이지가 가득 차는 케이스가 적다는 걸 생각해보면 사실 90p 정도의 분량이라고 보셔도 됩니다. 그래서 책을 받고 '아 오늘 다 읽고 내일 끝내야지'라고 생각했었습니다. 근데 읽다 보니 다 읽는데 일주일 정도는 걸렸습니다. 
 
